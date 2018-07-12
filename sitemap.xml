@@ -78,11 +78,6 @@
   </url>
   
   <url>
-    <loc>http://iocage.io/</loc>
-    <lastmod>2017-11-10T15:32:55+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://iocage.io/tags/bar/</loc>
     <lastmod>2017-12-21T19:56:44+01:00</lastmod>
     <priority>0</priority>
@@ -109,6 +104,12 @@
   <url>
     <loc>http://iocage.io/tags/</loc>
     <lastmod>2017-12-21T19:56:44+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://iocage.io/</loc>
+    <lastmod>2017-12-21T19:56:53+01:00</lastmod>
     <priority>0</priority>
   </url>
   
