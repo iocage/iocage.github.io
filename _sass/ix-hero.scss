@@ -1,21 +1,24 @@
 /* --- iX Hero Image --- */
-.hero-container { background-color: black; position: relative; z-index: 2; }
+.hero-container {
+	background-color: black;
+	position: relative;
+	z-index: 2;
+}
 
 .hero-button, .button {
-
-background-color: #f8232b;
-border-radius: 30px;
-color: white;
-cursor: pointer;
-display: inline-block;
-text-align: center;
-transition: all 0.2s ease;
--webkit-font-smoothing: antialiased;
-text-decoration: none;
-text-transform: uppercase;
-padding: 15px 30px;
-position: relative;
-font-weight: 300;
+	background-color: #f8232b;
+	border-radius: 30px;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	transition: all 0.2s ease;
+	-webkit-font-smoothing: antialiased;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 15px 30px;
+	position: relative;
+	font-weight: 300;
 }
 
 .hero-button:hover {
@@ -27,10 +30,10 @@ font-weight: 300;
 	overflow: hidden;
 	background: url() no-repeat scroll 50% 50%;
 	background-size: cover;
-}
 
-.hero .dummy {
-	padding-top: 40vw;
+	.dummy {
+		padding-top: 40vw;
+	}
 }
 
 .hero-text {
@@ -46,16 +49,12 @@ font-weight: 300;
 .hero-h1 {
 	color: white;
 	font-weight: 100;
-}
-
-.hero-h1 {
 	font-size: 3.75vw;
 	padding-top: 6vw;
 	line-height: 1.5em;
 	width: 90%;
 	margin: 0 auto;
 }
-
 
 .hero-button {
 	font-size: 2.5vw;
@@ -170,8 +169,11 @@ font-weight: 300;
 }
 /* --- End of iX Hero Image --- */
 
-
-.simple-hero-container { background-color: black; position: relative; z-index: 2; }
+.simple-hero-container {
+	background-color: black;
+	position: relative;
+	z-index: 2;
+}
 
 .simple-hero {
 	position: relative;
@@ -182,18 +184,17 @@ font-weight: 300;
 }
 
 .simple-hero .simple-dummy {
-    padding-top: 30vw;
+	padding-top: 30vw;
 }
 
 .simple-hero-text  {
-    color: white;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    text-align: center;
-    font-size: 80%;
+	color: white;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	text-align: center;
+	font-size: 80%;
 }
-
 
 .simple-hero-h1 {
 	color: white;
@@ -201,8 +202,8 @@ font-weight: 300;
 }
 
 .simple-hero-h1 {
-    font-size: 8.5vw;
-    padding-top: 6vw;
+	font-size: 8.5vw;
+	padding-top: 6vw;
 	line-height: 1.5em;
 	width: 90%;
 	margin: 0 auto;
@@ -211,36 +212,32 @@ font-weight: 300;
 @media only screen and (min-width:480px) {
 
 	.simple-hero .simple-dummy {
-	    padding-top: 25vw;
+		padding-top: 25vw;
 	}
 
 }
 
 @media only screen and (min-width:768px) {
 
-
 	.simple-hero .simple-dummy {
-	    padding-top: 23vw;
+		padding-top: 23vw;
 	}
 
-
 	.simple-hero-h1 {
-	    font-size: 8.5vw;
-	    padding-top: 3.5vw;
+		font-size: 8.5vw;
+		padding-top: 3.5vw;
 	}
 }
 
 @media only screen and (min-width:981px) {
 
 	.simple-hero .simple-dummy {
-	    padding-top: 25vw;
+		padding-top: 25vw;
 	}
 
-
 	.simple-hero-h1 {
-	    font-size: 6.5vw;
-	    padding-top: 6vw;
-
+		font-size: 6.5vw;
+		padding-top: 6vw;
 	}
 
 }
@@ -248,13 +245,12 @@ font-weight: 300;
 @media only screen and (min-width:1200px) {
 
 	.simple-hero .simple-dummy {
-	    padding-top: 10vw;
+		padding-top: 10vw;
 	}
 
-
 	.simple-hero-h1 {
-	    font-size: 2.5vw;
-	    padding-top: 2.5vw;
+		font-size: 2.5vw;
+		padding-top: 2.5vw;
 	}
 
 }
