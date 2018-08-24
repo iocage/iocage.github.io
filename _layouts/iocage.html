@@ -10,55 +10,57 @@
         <title>iocage | {{ page.title }}</title>
      </head>
      <body>
-        <div class="menu">
-            <a href="/" title="iocage" class="logo">
-                <span>
-                    <object data="/img/iocage_logo.svg" type="image/svg+xml">
-                        <img src="/img/iocage_logo.png" alt="iocage">
-                    </object>
-                </span>
-            </a>
-            <ul class="nav">
-                {% for item in site.navigation %}
-                <li>
-                    {% if item.icon %}
-                    <a href="{{item.url}}" class="nav-link ico {% if item.url == page.url %}active{% endif %}">
-                        <span class="fa fa-{{item.icon}}"></span>
-                    </a>
-                    {% else %}
-                    <a href="{{item.url}}" class="nav-link {% if item.url == page.url %}active{% endif %}">
-                        <span>{{item.name}}</span>
-                    </a>
-                    {% endif %}
-                </li>
-                {% endfor %}
-           </ul>
-        </div>
-        <div class="mobile-menu">
-            <a href="/" title="iocage" class="logo">
-                <span>
-                    <object data="/img/iocage_logo.svg" type="image/svg+xml" width="100%">
-                        <img src="/img/iocage_logo.png" alt="iocage">
-                    </object>
-                </span>
-            </a>
-            <div class="mobile-nav-wrap">
-                <label for="menu-toggle"><span class="fa fa-bars"></span>Menu</label>
-                <input type="checkbox" id="menu-toggle"/>
-                <ul class="mobile-nav">
+        <header>
+            <div class="menu">
+                <a href="/" title="iocage" class="logo">
+                    <span>
+                        <object data="/img/iocage_logo.svg" type="image/svg+xml">
+                            <img src="/img/iocage_logo.png" alt="iocage">
+                        </object>
+                    </span>
+                </a>
+                <ul class="nav">
                     {% for item in site.navigation %}
                     <li>
-                        <a href="{{item.url}}" class="mobile-nav-link {% if item.url == page.url %}active{% endif %}">
+                        {% if item.icon %}
+                        <a href="{{item.url}}" class="nav-link ico {% if item.url == page.url %}active{% endif %}">
+                            <span class="fa fa-{{item.icon}}"></span>
+                        </a>
+                        {% else %}
+                        <a href="{{item.url}}" class="nav-link {% if item.url == page.url %}active{% endif %}">
                             <span>{{item.name}}</span>
                         </a>
+                        {% endif %}
                     </li>
                     {% endfor %}
-                </ul>
+               </ul>
             </div>
-        </div>
-        {{content}}
-        <div class="footer">
+            <div class="mobile-menu">
+                <a href="/" title="iocage" class="logo">
+                    <span>
+                        <object data="/img/iocage_logo.svg" type="image/svg+xml" width="100%">
+                            <img src="/img/iocage_logo.png" alt="iocage">
+                        </object>
+                    </span>
+                </a>
+                <div class="mobile-nav-wrap">
+                    <label for="menu-toggle"><span class="fa fa-bars"></span>Menu</label>
+                    <input type="checkbox" id="menu-toggle"/>
+                    <ul class="mobile-nav">
+                        {% for item in site.navigation %}
+                        <li>
+                            <a href="{{item.url}}" class="mobile-nav-link {% if item.url == page.url %}active{% endif %}">
+                                <span>{{item.name}}</span>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <content>{{content}}</content>
+        <footer>
             Copyright 2018 iocage All Rights Reserved | <a class="{% if page.url == "/privacy-policy/" %}active{% endif %}" href="/privacy-policy/">Privacy Policy</a>
-        </div>
+        </footer>
      </body>
 </html>
