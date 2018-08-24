@@ -42,7 +42,7 @@
 
 
 /* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/3556a1");
+/*@import url("//hello.myfonts.net/count/3556a1");*/
 
 
 @font-face {
@@ -2911,8 +2911,6 @@ template {
   clip: auto;
 }
 
-
-
 body {
 	font-family: HelveticaNeue;
 }
@@ -2924,25 +2922,27 @@ body {
 	margin: 0 auto;
 }
 
-h1.logo {
-	background-image: url('/img/iocage_logo.png');
-	background-repeat: no-repeat;
-  background-size: cover;
+.logo {
 	display: block;
-	width: 142px;
-	height: 71px;
 	margin: 13px 0 0;
 	float: left;
-}
-
-a.logo {
-	display: block;
-	width: 100%;
-	height: 100%;
+  position: relative; z-index: 1;
 }
 
 .logo span {
-	display: none;
+  display: inline-block;
+}
+
+.logo object {
+  position: relative; z-index: -1;
+}
+
+.logo,
+.logo object,
+.logo img {
+  position: relative;
+  width: 142px;
+  height: 71px;
 }
 
 .nav {
