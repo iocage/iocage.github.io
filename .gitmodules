@@ -1,3 +1,9 @@
 [submodule "lib/flexboxgrid"]
 	path = lib/flexboxgrid
 	url = https://github.com/kristoferjoseph/flexboxgrid.git
+[submodule "lib/font-awesome"]
+	path = lib/font-awesome
+	url = https://github.com/FortAwesome/Font-Awesome.git
+[submodule "lib/normalize.css"]
+	path = lib/normalize.css
+	url = https://github.com/necolas/normalize.css.git
