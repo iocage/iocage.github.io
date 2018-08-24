@@ -13,7 +13,17 @@
             <h1 class="logo"><a href="/" title="iocage" class="logo"><span>iocage</span></a></h1>
             <ul class="nav">
                 {% for item in site.navigation %}
-                <li><a href="{{item.url}}" class="nav-link {% if item.url == page.url %}active{% endif %}"><span>{{item.name}}</span></a></li>
+                <li>
+                    {% if item.icon %}
+                    <a href="{{item.url}}" class="nav-link ico {% if item.url == page.url %}active{% endif %}">
+                        <span class="fa fa-{{item.icon}}"></span>
+                    </a>
+                    {% else %}
+                    <a href="{{item.url}}" class="nav-link {% if item.url == page.url %}active{% endif %}">
+                        <span>{{item.name}}</span>
+                    </a>
+                    {% endif %}
+                </li>
                 {% endfor %}
            </ul>
         </div>
@@ -24,7 +34,11 @@
                 <input type="checkbox" id="menu-toggle"/>
                 <ul class="mobile-nav">
                     {% for item in site.navigation %}
-                    <li><a href="{{item.url}}" class="mobile-nav-link {% if item.url == page.url %}active{% endif %}"><span>{{item.name}}</span></a></li>
+                    <li>
+                        <a href="{{item.url}}" class="mobile-nav-link {% if item.url == page.url %}active{% endif %}">
+                            <span>{{item.name}}</span>
+                        </a>
+                    </li>
                     {% endfor %}
                 </ul>
             </div>
