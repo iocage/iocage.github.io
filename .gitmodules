@@ -7,3 +7,6 @@
 [submodule "lib/normalize.css"]
 	path = lib/normalize.css
 	url = https://github.com/necolas/normalize.css.git
+[submodule "lib/flexboxgrid-helpers"]
+	path = lib/flexboxgrid-helpers
+	url = https://github.com/lgg/flexboxgrid-helpers.git

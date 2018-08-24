@@ -11,7 +11,7 @@ navigation:
     url: "/more-on-iocage/"
   - name: "Community"
     url: "/community/"
-  - name: "Documentation"
+  - name: "Docs"
     url: "https://iocage.readthedocs.io/en/latest/index.html"
   - name: "GitHub"
     url: "https://github.com/iocage"
