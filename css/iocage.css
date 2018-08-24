@@ -2927,9 +2927,10 @@ body {
 h1.logo {
 	background-image: url('/img/iocage_logo.png');
 	background-repeat: no-repeat;
+  background-size: cover;
 	display: block;
-	width: 143px;
-	height: 68px;
+	width: 142px;
+	height: 71px;
 	margin: 13px 0 0;
 	float: left;
 }
