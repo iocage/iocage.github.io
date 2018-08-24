@@ -1,67 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://iocage.github.io/blog/eleventh/</loc>
-    <lastmod>2017-12-21T19:56:53+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://iocage.github.io/blog/tenth/</loc>
-    <lastmod>2017-12-21T19:56:48+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://iocage.github.io/blog/nineth/</loc>
-    <lastmod>2017-12-21T19:56:44+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://iocage.github.io/blog/eighth/</loc>
-    <lastmod>2017-12-21T19:56:38+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://iocage.github.io/blog/seventh/</loc>
-    <lastmod>2017-12-21T19:56:32+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://iocage.github.io/blog/sixth/</loc>
-    <lastmod>2017-12-21T19:56:28+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://iocage.github.io/blog/fifth/</loc>
-    <lastmod>2017-12-21T19:56:23+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://iocage.github.io/blog/fourth/</loc>
-    <lastmod>2017-12-21T19:56:17+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://iocage.github.io/blog/third/</loc>
-    <lastmod>2017-12-21T19:56:08+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://iocage.github.io/blog/second/</loc>
-    <lastmod>2017-12-21T18:46:53+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://iocage.github.io/blog/</loc>
-    <lastmod>2017-12-21T18:17:18+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://iocage.github.io/blog/first/</loc>
-    <lastmod>2017-12-21T18:17:18+01:00</lastmod>
-  </url>
-  
+
   <url>
     <loc>https://iocage.github.io/privacy-policy/</loc>
     <lastmod>2017-12-18T10:16:23+01:00</lastmod>
