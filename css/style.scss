@@ -71,10 +71,8 @@ body {
 }
 
 .menu {
-	width: 80vw;
 	height: 94px;
 	background-color: white;
-	margin: 0 auto;
 }
 
 .logo {
@@ -108,43 +106,52 @@ body {
   height: 43.6px;
 }
 
-.nav {
-	float: right;
-	display: block;
-	list-style: none;
-	margin-top: 25px;
+nav {
 
-	li {
-		display: inline;
-		padding-right: 22px;
-		font-size: 12.65pt;
-		position: relative;
-		line-height: 1em;
+	ul {
+		float: right;
+		display: block;
+		list-style: none;
+		margin-top: 64px;
+
+		li {
+			display: inline;
+			padding-right: 22px;
+			font-size: 12.65pt;
+			position: relative;
+			line-height: 1em;
+		}
 	}
+
+	a {
+		font-weight: bold;
+		text-decoration: none;
+		color: black;
+		margin-bottom: 29px;
+		padding-bottom: 4px;
+
+		&:hover {
+			color: #f8232b;
+			border-bottom: 3px solid #f8232b;
+		}
+
+		.ico:hover {
+			color: #f8232b;
+			border-bottom: none;
+		}
+
+		&.active {
+			color: #f8232b;
+		}
+	}
+
 }
 
-.nav-link {
-	font-weight: bold;
-	text-decoration: none;
-	color: black;
-	margin-bottom: 29px;
-	padding-bottom: 4px;
-}
+.nav-link
 
-.nav-link:hover {
-	color: #f8232b;
-	border-bottom: 3px solid #f8232b;
-}
+.nav-link
 
-.nav-link.ico:hover {
-	color: #f8232b;
-	border-bottom: none;
-
-}
-
-.nav-link.active {
-    color: #f8232b;
-}
+.nav-link
 .separator {
     border-left: 1px solid black;
     height: 30px;
@@ -403,43 +410,6 @@ body {
 
 .mobile-menu {
 	display: none;
-}
-
-@media only screen and (max-width:1099px) {
-
-	.menu {
-		display: none;
-	}
-
-	.mobile-menu {
-		display: block;
-	}
-
-}
-
-
-.mobile-menu {
-	height: 60px;
-	width: 100vw;
-}
-
-.mobile-menu .logo  {
-	width: 100px;
-	height: 48px;
-	margin: 5px;
-	margin-left: 5%;
-	background-size: contain;
-}
-
-.mobile-nav-wrap {
-	float: right;
-	margin: 17px 5% 0px 0;
-}
-
-.mobile-nav-wrap label {
-	cursor: pointer;
-	font-size: 160%;
-	font-weight: 700;
 }
 
 #menu-toggle {
