@@ -13,3 +13,4 @@ navigation:
     url: "http://iocage.readthedocs.io/en/latest/index.html"
   - name: "iocage Google Group"
     url: "https://groups.google.com/forum/#!forum/iocage"
+    icon: "google"
