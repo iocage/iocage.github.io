@@ -2945,6 +2945,14 @@ body {
   height: 71px;
 }
 
+.mobile-menu .logo,
+.mobile-menu .logo object,
+.mobile-menu .logo img {
+  position: relative;
+  width: 88px;
+  height: 43.6px;
+}
+
 .nav {
 	float: right;
 	display: block;
