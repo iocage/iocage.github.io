@@ -31,8 +31,11 @@
 	background: url() no-repeat scroll 50% 50%;
 	background-size: cover;
 
-	.dummy {
+	&::after {
+		content: " ";
 		padding-top: 40vw;
+		position: relative;
+		display: block;
 	}
 }
 
@@ -183,8 +186,13 @@
 	background-image: url("/img/simple-hero.png")
 }
 
-.simple-hero .simple-dummy {
-	padding-top: 30vw;
+.simple-hero {
+	&::after {
+		content: " ";
+		padding-top: 30vw;
+		position: relative;
+		display: block;
+	}
 }
 
 .simple-hero-text  {
