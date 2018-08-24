@@ -1,3 +1,15 @@
 title: iocage
 email: authors@iocage.io
 theme: jekyll-theme-tactile
+
+navigation:
+  - name: "Home"
+    url: "/"
+  - name: "More on iocage"
+    url: "/more-on-iocage/"
+  - name: "Community"
+    url: "/community/"
+  - name: "Documentation"
+    url: "http://iocage.readthedocs.io/en/latest/index.html"
+  - name: "iocage Google Group"
+    url: "https://groups.google.com/forum/#!forum/iocage"

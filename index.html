@@ -1,3 +1,5 @@
+---
+---
 <html>
     <head>
     <meta name="generator" content="Hugo 0.30.2" />
@@ -8,16 +10,13 @@
         <title>iocage | Home</title>
      </head>
      <body>
+        <div>{{page.url}}</div>
         <div class="menu">
             <h1 class="logo"><a href="/" title="iocage" class="logo"><span>iocage</span></a></h1>
             <ul class="nav">
-                <li><a href="/" class="nav-link  active"><span>Home</span></a></li>
-                <li><a href="/more-on-iocage/" class="nav-link "><span>More on iocage</span></a></li>
-                <li><a href="/community/" class="nav-link "><span>Community</span></a></li>
-                <li><a href="http://iocage.readthedocs.io/en/latest/index.html" class="nav-link "><span>Documentation</span></a></li>
-                <li><span class="separator"></span></li>
-                <li><a href="https://github.com/iocage/iocage" title="iocage Github" class="nav-link ico"><span class="fa fa-github"></span></a></li>
-                <li><a href="https://groups.google.com/forum/#!forum/iocage" title="iocage Google Group" class="nav-link ico"><span class="fa fa-google"></span></a></li>
+                {% for item in site.navigation %}
+                <li><a href="{{item.url}}" class="nav-link {% if item.url == page.url %}active{% endif %}"><span>{{item.name}}</span></a></li>
+                {% endfor %}
            </ul>
         </div>
         <div class="mobile-menu">
@@ -26,12 +25,9 @@
                 <label for="menu-toggle"><span class="fa fa-bars"></span>Menu</label>
                 <input type="checkbox" id="menu-toggle"/>
                 <ul class="mobile-nav">
-                    <li><a href="/" class="mobile-nav-link  active"><span>Home</span></a></li>
-                    <li><a href="/more-on-iocage/" class="mobile-nav-link "><span>More on iocage</span></a></li>
-                    <li><a href="/community/" class="mobile-nav-link "><span>Community</span></a></li>
-                    <li><a href="http://iocage.readthedocs.io/en/latest/index.html" class="mobile-nav-link "><span>Documentation</span></a></li>
-                    <li><a href="https://github.com/iocage/iocage" title="iocage Github" class="mobile-nav-link ico"><span class="fa fa-github"></span>iocage Github</a></li>
-                    <li><a href="https://groups.google.com/forum/#!forum/iocage" title="iocage Google Group" class="mobile-nav-link ico"><span class="fa fa-google"></span>iocage Google Group</a></li>
+                    {% for item in site.navigation %}
+                    <li><a href="{{item.url}}" class="mobile-nav-link {% if item.url == page.url %}active{% endif %}"><span>{{item.name}}</span></a></li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
