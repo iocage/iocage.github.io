@@ -1,75 +1,40 @@
 ---
+layout: iocage
 ---
-<html>
-    <head>
-    <meta name="generator" content="Hugo 0.30.2" />
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="/css/iocage.css">
-        <title>iocage | Home</title>
-     </head>
-     <body>
-        <div>{{page.url}}</div>
-        <div class="menu">
-            <h1 class="logo"><a href="/" title="iocage" class="logo"><span>iocage</span></a></h1>
-            <ul class="nav">
-                {% for item in site.navigation %}
-                <li><a href="{{item.url}}" class="nav-link {% if item.url == page.url %}active{% endif %}"><span>{{item.name}}</span></a></li>
-                {% endfor %}
-           </ul>
+<div class="hero-container">
+    <div class="hero" style="background-image: url(/img/homepage_hero_1920x615px.png);">
+        <div class="dummy"> </div>
+        <div class="hero-text">
+             <h1 class="hero-h1">Convenient, Lightweight, &amp; Easy Container Management</h1>
+             <a href="https://github.com/iocage/iocage/releases" class="hero-button">get iocage</a>
         </div>
-        <div class="mobile-menu">
-            <h1 class="logo"><a href="/" title="iocage" class="logo"><span>iocage</span></a></h1>
-            <div class="mobile-nav-wrap">
-                <label for="menu-toggle"><span class="fa fa-bars"></span>Menu</label>
-                <input type="checkbox" id="menu-toggle"/>
-                <ul class="mobile-nav">
-                    {% for item in site.navigation %}
-                    <li><a href="{{item.url}}" class="mobile-nav-link {% if item.url == page.url %}active{% endif %}"><span>{{item.name}}</span></a></li>
-                    {% endfor %}
-                </ul>
+    </div>
+</div>
+<div class="under-hero">
+    <h2 class="under-hero-h2">Taking the Frustration Out of Container Management</h2>
+</div>
+<div class="content-wrap">
+    <div class="content-row">
+        <div class="box-wrap">
+            <div class="box" id="box1">
+                <h3 class="box-h">Ease of Use</h3>
+                <div class="box-content">Fetch, extract, and start a cage (container) with one simple command. Updates are a snap with iocage’s simplified container management syntax.</div>
             </div>
         </div>
-        <div class="hero-container">
-            <div class="hero" style="background-image: url(/img/homepage_hero_1920x615px.png);">
-                <div class="dummy"> </div>
-                <div class="hero-text">
-                     <h1 class="hero-h1">Convenient, Lightweight, &amp; Easy Container Management</h1>
-                     <a href="https://github.com/iocage/iocage/releases" class="hero-button">get iocage</a>
-                </div>
+        <div class="box-wrap">
+            <div class="box" id="box2">
+                <h3 class="box-h">Powerful &amp; Lightweight</h3>
+                <div class="box-content">iocage gives you the power to manage your jails efficiently while leaving only a small footprint on your system.</div>
             </div>
         </div>
-        <div class="under-hero">
-            <h2 class="under-hero-h2">Taking the Frustration Out of Container Management</h2>
-        </div>
-        <div class="content-wrap">
-            <div class="content-row">
-                <div class="box-wrap">
-                    <div class="box" id="box1">
-                        <h3 class="box-h">Ease of Use</h3>
-                        <div class="box-content">Fetch, extract, and start a cage (container) with one simple command. Updates are a snap with iocage’s simplified container management syntax.</div>
-                    </div>
-                </div>
-                <div class="box-wrap">
-                    <div class="box" id="box2">
-                        <h3 class="box-h">Powerful &amp; Lightweight</h3>
-                        <div class="box-content">iocage gives you the power to manage your jails efficiently while leaving only a small footprint on your system.</div>
-                    </div>
-                </div>
-                <div class="box-wrap">
-                    <div class="box" id="box3">
-                        <h3 class="box-h">Safe &amp; Secure</h3>
-                        <div class="box-content">iocage builds on the trusted FreeBSD Jails system to add convenient ways to manage your cages without having to sacrifice the security you know and love.</div>
-                    </div>
-                </div>
-            </div>
-            <div class="button-wrap">
-                <a href="/more-on-iocage/" class="button">More on iocage</a>
+        <div class="box-wrap">
+            <div class="box" id="box3">
+                <h3 class="box-h">Safe &amp; Secure</h3>
+                <div class="box-content">iocage builds on the trusted FreeBSD Jails system to add convenient ways to manage your cages without having to sacrifice the security you know and love.</div>
             </div>
         </div>
-        <div class="footer">
-            Copyright 2018 iocage All Rights Reserved | <a href="/privacy-policy/">Privacy Policy</a>
-        </div>
-     </body>
-</html>
+    </div>
+    <div class="button-wrap">
+        <a href="/more-on-iocage/" class="button">More on iocage</a>
+    </div>
+</div>
