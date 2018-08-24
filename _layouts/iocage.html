@@ -1,0 +1,38 @@
+---
+---
+<html>
+    <head>
+    <meta name="generator" content="Hugo 0.30.2" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="/css/iocage.css">
+        <title>iocage | Home</title>
+     </head>
+     <body>
+        <div class="menu">
+            <h1 class="logo"><a href="/" title="iocage" class="logo"><span>iocage</span></a></h1>
+            <ul class="nav">
+                {% for item in site.navigation %}
+                <li><a href="{{item.url}}" class="nav-link {% if item.url == page.url %}active{% endif %}"><span>{{item.name}}</span></a></li>
+                {% endfor %}
+           </ul>
+        </div>
+        <div class="mobile-menu">
+            <h1 class="logo"><a href="/" title="iocage" class="logo"><span>iocage</span></a></h1>
+            <div class="mobile-nav-wrap">
+                <label for="menu-toggle"><span class="fa fa-bars"></span>Menu</label>
+                <input type="checkbox" id="menu-toggle"/>
+                <ul class="mobile-nav">
+                    {% for item in site.navigation %}
+                    <li><a href="{{item.url}}" class="mobile-nav-link {% if item.url == page.url %}active{% endif %}"><span>{{item.name}}</span></a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {{content}}
+        <div class="footer">
+            Copyright 2018 iocage All Rights Reserved | <a class="{% if page.url == "/privacy-policy/" %}active{% endif %}" href="/privacy-policy/">Privacy Policy</a>
+        </div>
+     </body>
+</html>
