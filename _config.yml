@@ -10,7 +10,7 @@ navigation:
   - name: "Community"
     url: "/community/"
   - name: "Documentation"
-    url: "http://iocage.readthedocs.io/en/latest/index.html"
+    url: "https://iocage.readthedocs.io/en/latest/index.html"
   - name: "GitHub"
     url: "https://github.com/iocage"
     icon: "github"
