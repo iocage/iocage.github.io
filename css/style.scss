@@ -6,6 +6,7 @@ $iocage-red: #f8232b;
 $fa-font-path: "/lib/font-awesome/web-fonts-with-css/webfonts";
 @import "lib/font-awesome/web-fonts-with-css/scss/fontawesome";
 @import "lib/font-awesome/web-fonts-with-css/scss/brands";
+@import "lib/font-awesome/web-fonts-with-css/scss/shims";
 
 footer {
 	background-color: black;
@@ -502,6 +503,12 @@ nav {
 
 .center {
 	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.content-spacing {
+	padding: 1em 0 0 0;
 }
 
 .fico {
