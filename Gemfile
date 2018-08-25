@@ -34,3 +34,9 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 gem "jekyll-theme-tactile", "~> 0.1.1"
 
 gem 'jekyll-watch'
+
+# requested by jekyll
+require 'rbconfig'
+if RbConfig::CONFIG['target_os'] =~ /(?i-mx:bsd|dragonfly)/
+  gem 'rb-kqueue', '>= 0.2'
+end
