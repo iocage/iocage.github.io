@@ -5,8 +5,12 @@ $iocage-red: #f8232b;
 
 $fa-font-path: "/lib/font-awesome/web-fonts-with-css/webfonts";
 @import "lib/font-awesome/web-fonts-with-css/scss/fontawesome";
+//@import "lib/font-awesome/web-fonts-with-css/scss/core";
 @import "lib/font-awesome/web-fonts-with-css/scss/brands";
+@import "lib/font-awesome/web-fonts-with-css/scss/icons";
 @import "lib/font-awesome/web-fonts-with-css/scss/shims";
+@import "lib/font-awesome/web-fonts-with-css/scss/solid";
+@import "lib/font-awesome/web-fonts-with-css/scss/regular";
 
 footer {
 	background-color: black;
