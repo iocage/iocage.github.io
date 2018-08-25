@@ -4,8 +4,8 @@
 $iocage-red: #f8232b;
 
 $fa-font-path: "/lib/font-awesome/web-fonts-with-css/webfonts";
-@import "../lib/font-awesome/web-fonts-with-css/scss/fontawesome";
-@import "../lib/font-awesome/web-fonts-with-css/scss/brands";
+@import "lib/font-awesome/web-fonts-with-css/scss/fontawesome";
+@import "lib/font-awesome/web-fonts-with-css/scss/brands";
 
 footer {
 	background-color: black;
