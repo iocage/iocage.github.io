@@ -28,6 +28,23 @@ footer {
 
 content {
 
+	button {
+		background-color: $iocage-red;
+		border-radius: 30px;
+		border-color: transparent;
+		color: white;
+		cursor: pointer;
+		display: inline-block;
+		text-align: center;
+		transition: all 0.2s ease;
+		-webkit-font-smoothing: antialiased;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 15px 30px;
+		position: relative;
+		font-weight: 300;
+	}
+
 	.hero-container,
 	.hero-container-simple {
 
@@ -48,23 +65,6 @@ content {
 				color: white;
 				margin-top: 0;
 				margin-bottom: 0.5em;
-			}
-
-			button {
-				background-color: $iocage-red;
-				border-radius: 30px;
-				border-color: transparent;
-				color: white;
-				cursor: pointer;
-				display: inline-block;
-				text-align: center;
-				transition: all 0.2s ease;
-				-webkit-font-smoothing: antialiased;
-				text-decoration: none;
-				text-transform: uppercase;
-				padding: 15px 30px;
-				position: relative;
-				font-weight: 300;
 			}
 
 		}
@@ -260,19 +260,6 @@ nav {
 	justify-content: space-between;
 }
 
-.box-wrap {
-	width: 33.33%;
-	min-width: 400px;
-}
-
-@media only screen and (max-width:1000px) {
-	.box-wrap {
-		width: 90%;
-		margin: 0 auto;
-		min-width: unset;
-	}
-}
-
 .box {
 	font-weight: 300;
 	background-position: center top;
@@ -281,10 +268,6 @@ nav {
 	text-align: center;
 	font-size: 1.10em;
 	line-height: 1.5;
-}
-
-.box-content {
-	padding: 0 125px;
 }
 
 @media only screen and (max-width:600px) {
@@ -310,21 +293,6 @@ nav {
 }
 #box3 {
 	background-image: url('/img/Safe_Icon.png');
-}
-
-.button-wrap {
-	text-align: center;
-	margin-bottom: 50px;
-}
-
-.button:hover:after {
-	content: "";
-	font-size: 17px;
-	top: 15px;
-}
-
-.button:hover {
-	padding-right: 40px;
 }
 
 .more {
@@ -658,17 +626,17 @@ nav {
 	margin: 15px 0 45px 0;
 }
 
-.button.tag {
+button.tag {
 	font-size: 70%;
 	padding: 4px 8px;
 	margin: 0px;
 }
 
-.button.tag:hover {
+button.tag:hover {
 	opacity: 0.75;
 }
 
-.button.tag:hover:after {
+button.tag:hover:after {
 	content: "";
 	display: none;
 	position: initial;
