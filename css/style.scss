@@ -333,7 +333,7 @@ nav {
 }
 
 .video {
-	width: 540px;
+	max-width: 540px;
 	height: 674px;
 	margin: 0 auto;
 	padding: 20px 20px 20px 20px;
@@ -350,14 +350,6 @@ nav {
 @media only screen and (max-width:1390px) {
 	.left, .right {
 		width: 100%;
-	}
-}
-
-@media only screen and (max-width:720px) {
-	.video {
-		transform: scale(0.6);
-		transform-origin: top left;
-		margin: 0px;
 	}
 }
 
