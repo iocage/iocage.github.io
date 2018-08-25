@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "ix-hero";
+$iocage-red: #f8232b;
 
 $fa-font-path: "/lib/font-awesome/web-fonts-with-css/webfonts";
 @import "../lib/font-awesome/web-fonts-with-css/scss/fontawesome";
@@ -27,6 +27,62 @@ footer {
 }
 
 content {
+
+	.hero-container,
+	.hero-container-simple {
+
+		.hero {
+
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: right;
+			background-color: black;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+	  		justify-content: center;
+			height: 32vw;
+			min-height: 240px;
+			max-height: 470px;
+			text-align: center;
+
+			h1 {
+				line-height: 1.2em;
+				color: white;
+				margin-top: 0;
+				margin-bottom: 0.5em;
+			}
+
+			button {
+				background-color: $iocage-red;
+				border-radius: 30px;
+				border-color: transparent;
+				color: white;
+				cursor: pointer;
+				display: inline-block;
+				text-align: center;
+				transition: all 0.2s ease;
+				-webkit-font-smoothing: antialiased;
+				text-decoration: none;
+				text-transform: uppercase;
+				padding: 15px 30px;
+				position: relative;
+				font-weight: 300;
+			}
+
+		}
+
+	}
+
+	.hero-container-simple {
+		.hero {
+			position: relative;
+			overflow: hidden;
+			background: url() no-repeat scroll 50% 50%;
+			background-size: cover;
+			background-image: url("/img/simple-hero.png");
+		}
+	}
 
 	.under-hero {
 		background-color: #c5c4c4;
@@ -131,17 +187,17 @@ nav {
 		padding-bottom: 4px;
 
 		&:hover {
-			color: #f8232b;
-			border-bottom: 3px solid #f8232b;
+			color: $iocage-red;
+			border-bottom: 3px solid $iocage-red;
 		}
 
 		.ico:hover {
-			color: #f8232b;
+			color: $iocage-red;
 			border-bottom: none;
 		}
 
 		&.active {
-			color: #f8232b;
+			color: $iocage-red;
 		}
 	}
 
@@ -466,7 +522,7 @@ nav {
 }
 
 .mobile-nav-link:hover {
-	color: #f8232b;
+	color: $iocage-red;
 	border-bottom: 2px solid white;
 
 }
@@ -483,7 +539,7 @@ nav {
 	font-size: 3em;
 	vertical-align: middle;
 	padding-right: 15px;
-	color: #f8232b;
+	color: $iocage-red;
 	display: inline-block;
 	width: 75px;
 	text-align: center;
@@ -500,7 +556,7 @@ nav {
 }
 
 .community-link:hover {
-	color: #f8232b;
+	color: $iocage-red;
 	text-decoration: underline;
 }
 
@@ -546,13 +602,13 @@ nav {
 		}
 
 		a:hover {
-			border: 1px solid #f8232b;
+			border: 1px solid $iocage-red;
 		}
 	}
 
 	li a:hover,
 	li.active a {
-		color: #f8232b;
+		color: $iocage-red;
 		background-color: #F0F0F0;
 	}
 
@@ -669,7 +725,7 @@ nav {
 			text-transform: uppercase;
 			text-decoration: none;
 			clear: both;
-			color: #f8232b;
+			color: $iocage-red;
 
 			&:hover {
 				opacity: 0.8;
