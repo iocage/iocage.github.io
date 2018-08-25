@@ -1,8 +1,8 @@
 title: iocage
 email: authors@iocage.io
-theme: jekyll-theme-tactile
 sass:
   style: compact
+  sass_dir: .
 
 navigation:
   - name: "Home"
