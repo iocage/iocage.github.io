@@ -40,3 +40,7 @@ require 'rbconfig'
 if RbConfig::CONFIG['target_os'] =~ /(?i-mx:bsd|dragonfly)/
   gem 'rb-kqueue', '>= 0.2'
 end
+
+gem "rouge", "~> 3.2"
+
+gem "kramdown", "~> 1.17"

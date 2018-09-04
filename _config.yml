@@ -4,6 +4,12 @@ sass:
   style: compact
   sass_dir: .
 
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 navigation:
   - name: "Home"
     url: "/"
