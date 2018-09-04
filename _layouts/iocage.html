@@ -5,11 +5,10 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-        <link rel="stylesheet" type="text/css" href="/lib/flexboxgrid/dist/flexboxgrid.min.css"/>
-        <link rel="stylesheet" type="text/css" href="/lib/flexboxgrid-helpers/dist/flexboxgrid-helpers.min.css"/>
-        <link rel="stylesheet" type="text/css" href="/lib/normalize.css/normalize.css"/>
-        <link rel="stylesheet" type="text/css" href="/css/style.css"/>
-        <link rel="stylesheet" type="text/css" href="/css/rouge.css"/>
+        <link rel="stylesheet" type="text/css" href="{{ "/lib/flexboxgrid/dist/flexboxgrid.min.css" | relative_url }}"/>
+        <link rel="stylesheet" type="text/css" href="{{ "/lib/flexboxgrid-helpers/dist/flexboxgrid-helpers.min.css" | relative_url }}"/>
+        <link rel="stylesheet" type="text/css" href="{{ "/lib/normalize.css/normalize.css" | relative_url }}"/>
+        <link rel="stylesheet" type="text/css" href="{{ "/css/style.css" | relative_url }}"/>
         <title>iocage | {{ page.title }}</title>
      </head>
      <body>
@@ -18,8 +17,8 @@
                 <div class="menu col-xs-12">
                     <a href="/" title="iocage" class="logo">
                         <span>
-                            <object data="/img/iocage_logo.svg" type="image/svg+xml">
-                                <img src="/img/iocage_logo.png" alt="iocage">
+                            <object data="{{ "/img/iocage_logo.svg" | relative_url }}" type="image/svg+xml">
+                                <img src="{{ "/img/iocage_logo.png" | relative_url }}" alt="iocage">
                             </object>
                         </span>
                     </a>
