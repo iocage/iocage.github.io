@@ -2,7 +2,7 @@ title: iocage
 email: authors@iocage.io
 sass:
   style: compact
-  sass_dir: .
+  sass_dir: css
 
 markdown: kramdown
 
