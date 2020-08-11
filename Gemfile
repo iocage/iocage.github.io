@@ -43,4 +43,4 @@ end
 
 gem "rouge", "~> 3.2"
 
-gem "kramdown", "~> 1.17"
+gem "kramdown", ">= 2.3.0"
